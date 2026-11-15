@@ -1,0 +1,108 @@
+.below-fold-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 800px;
+}
+
+* {
+  image-rendering: pixelated !important;
+  border-radius: 0px !important;
+}
+
+gay-schizo {
+  animation: none;
+  text-shadow: -1px 0 #f0f, 1px 0 #0ff
+}
+
+.schizo-overlay {
+  visibility: hidden !important;
+}
+
+gay-rainbow, gay-rainbow code {
+  animation: none !important;
+}
+
+gay-rainbow {
+  background-image: linear-gradient(120deg in hsl longer hue, red, red, red, red, red, red, red);
+}
+
+gay-rainbow code {
+  background-image: linear-gradient(#ddd8), linear-gradient(120deg in hsl longer hue, red, red, red, red, red, red, red);
+}
+
+.xp-button {
+  background: none;
+  border: 1px solid black;
+}
+
+.bonzi {
+  background-position: 0px 0px !important;
+}
+
+.bonzi_hat {
+  visibility: visible !important;
+  display: block !important;
+}
+
+.bonzi_tag {
+  bottom: 159px;
+  top: auto;
+}
+
+.bonzi_name img {
+  display: none;
+}
+
+#chat_send, #start_button, .window_close, #login_go {
+  background-position: 0px 0px !important;
+  color: transparent;
+  text-shadow: none;
+}
+
+#chat_send {
+  background-image: url(https://file.garden/as8F1B3mNBDYixie/start_optimiz.png);
+}
+
+#start_button {
+  background-image: url(https://file.garden/as8F1B3mNBDYixie/startthin_optimiz.png);
+}
+
+.vault-message, .vault-input {
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+}
+
+.vault-keeper img {
+  transition: none !important;
+  transform: none !important;
+}
+
+#chat_log_button, #chat_log_button:hover, #chat_log_button:active {
+  background: center / 16px no-repeat url(img/icon/bars.svg), #8240bd;
+}
+
+.window_header {
+  text-shadow: none;
+}
+
+#start_menu_pfp {
+  border: 1px solid #0000;
+  background-repeat: no-repeat;
+}
+
+#start_menu_name {
+  text-shadow: none;
+}
+
+#room_info {
+  color: white;
+  font-weight: normal;
+}
+
+.start_menu_item:hover {
+  background: none;
+  color: black;
+}
+
+button {
+  border: 1px solid black !important;
+}
