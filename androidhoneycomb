@@ -1,0 +1,664 @@
+.window{
+   filter: drop-shadow(0px 0px 16px var(--honeyholo));
+   outline: 9px solid var(--honeyholoa);
+   border-radius: 3px;
+   }
+button, .settings button{
+   border: none;
+   background: transparent;
+   color: white;
+}
+@media screen and (max-width: 560px)  {
+	#login_card {
+		width: 223px;
+		height: 70px;
+		margin-left: -102px;
+		margin-top: 0px;
+	}
+	#login_load {
+		margin-top: 45px;
+		margin-left: -20%;
+		transform: translateX(-30px);
+	}
+}
+#chat_log{
+   width: 100%;
+   height: calc(100% - 50px);
+   bottom: 0;
+}
+#chat_log .window_body{
+   background: black url("https://file.garden/alBgarnuWEQGoy5b/background_holo_dark_3.png") center / 100% 100% no-repeat;
+   padding: 0 0 0 0;
+}
+#chat_log .window_header::after{
+   height: 0px;
+}
+#chat_log .window_header{
+   padding-left: 15px;
+}
+.window_header{
+   background-color: black;
+   border-image: none;
+   height: 38px;
+   padding: 2px 7px 0 4%;
+   border-top: 3px solid transparent;
+   border-bottom: 3px solid transparent;
+}
+
+.window_header::after {
+  content: "";
+  position: absolute;
+  left: 2.5%;
+  display: block;
+  width: 95%;
+  height: 3px;
+  background-color: #6699FF;
+  margin-top: 40px;
+}
+
+.window_body{
+   border-image: none;
+   padding: 0 2.4% 2.4% 2.4%;
+   color: white;
+   background-color: black;
+}
+
+.window_close{
+   background-image: none;
+   height: 100%;
+   width: 50%;
+}
+
+#content{
+   background-color: black;
+   background-image: var(--wp);
+   background-position: center;
+   background-size: cover;
+}
+
+hr{
+   border: none;
+   background-color: rgba(255, 255, 255, 0.25);
+   height: 2px;
+   width: 96.8%;
+   margin-left: 1.5%;
+}
+
+.log_time{
+   color: white;
+   position: relative;
+   top: -3px;
+   font-size: 18px;
+   font-family: "honeyclock";
+}
+
+body {
+	font-family: "Droid Sans", sans-serif;
+}
+
+input {
+	font-family: "Droid Sans", sans-serif;
+}
+
+.settings_category {
+        padding: 10px;
+}
+
+.settings_category.selected, .log_message:hover{
+	background-color: #122E6A;
+} 
+.settings .window_header::before{
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background-image: url('https://file.garden/alBgarnuWEQGoy5b/Settings.png');
+  background-size: contain; /* Ensures the image scales down into the 20x20 box */
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+#chat_log .window_header{
+  font-size: 0px;
+}
+#chat_log .window_header::before{
+  content: "BonziLOG";
+  font-size: 16px;
+  padding-left: 40px;
+  padding-top: 4px;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background-image: url('https://file.garden/alBgarnuWEQGoy5b/bwlog.png');
+  background-size: contain; /* Ensures the image scales down into the 20x20 box */
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+#chat_log .window_close{
+  background: #ffffff00;
+  width: 70px;
+  text-shadow: none;
+}
+#chat_log .window_close::before{
+content: "Hide";
+color: white;
+padding: 15px;
+top: 8px;
+position: relative;
+font-size: 20px;
+}
+#chat_log .window_close:hover, #chat_log .window_close:active{
+   border-radius: 2px;
+   background: #6191F463;
+   box-shadow: none;
+   outline: 2px solid #6699FF40;
+}
+.reply, .delete, .ban{
+   filter: invert(1);
+}
+
+.delete{
+   filter: invert(0);
+   background: url("https://file.garden/alBgarnuWEQGoy5b/ic_home_delete_holo_dark.png");
+   background-position: center;
+   background-size: 120%;
+}
+
+.delete:active, .delete:hover{
+   background: url("https://file.garden/alBgarnuWEQGoy5b/ic_home_delete_hover_holo_dark.png");
+   background-position: center;
+   background-size: 120%;
+}
+
+#talkcard{
+   background-color: black;
+   color: white;
+   border-top-left-radius: 0px;
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 7px;
+   border: 1px solid #6699FF;
+   top: 50px;
+   height: 10px;
+}
+
+.reply{
+   filter: invert(0);
+   background: url("https://file.garden/alBgarnuWEQGoy5b/replyhol.png");
+   background-position: center;
+   background-size: 120%;
+}
+
+.reply:active, .reply:hover{
+   background: url("https://file.garden/alBgarnuWEQGoy5b/replyholhov.png");
+   background-position: center;
+   background-size: 120%;
+}
+
+code {
+	border: 1px solid #222;
+	background-color: #444;
+	border-radius: 4px;
+	font: monospace;
+	padding: 0 0.2em;
+}
+
+gay-schizo{
+   color: white;
+}
+
+#start_menu{
+        border-image: none;
+        background: linear-gradient(0deg, var(--dimwhenstartmenu), var(--dimwhenstartmenu))/*, var(--wp)*/;
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+}
+#start_menu_body {
+	position: absolute;
+        border-top: 1px solid #6699FF;
+	top: 70px;
+	left: 0px;
+	padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        height: 100%;
+	background: none;
+	display: flex;
+        flex-wrap: wrap;
+	flex-direction: row;
+	gap: 4px;
+}
+
+.start_menu_item_details {
+        display: none;
+}
+
+.start_menu_item:hover{
+        background: none;
+}
+
+.start_menu_item {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	height: 3em;
+	padding: 10px;
+        /* left: calc(50% - 110px); */
+        left: 0px;
+        top: 0px;
+        position: relative;
+	gap: 6px;
+	cursor: pointer;
+}
+
+#start_menu_pfp{
+        width: 50px;
+        height: 50px;
+        border: 0px solid transparent;
+        border-radius: 0px;
+        background-size: 0%;
+        background-color: transparent;
+        content: url("https://file.garden/alBgarnuWEQGoy5b/Untitled402_20261029160456.png");
+}
+
+#start_menu_vault {
+	position: absolute;
+	bottom: 0px;
+        top: -14px;
+	right: -12px;
+	width: 100px;
+	height: 100px;
+	background: url("https://file.garden/alBgarnuWEQGoy5b/unlock_halo.png");
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+	cursor: pointer;
+}
+#start_menu_vault::before{
+        content: "";
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+filter: drop-shadow(0px 0px 2px white);
+        background: url("https://file.garden/alBgarnuWEQGoy5b/Untitled403_20261029162342.png");
+        background-position: center;
+        background-size: 50%;
+        background-repeat: no-repeat;
+}
+
+.vault-body {
+	flex: 1;
+	background: black;
+	position: relative;
+}
+
+.vault-message {
+	position: absolute;
+	height: 60px;
+	top: 20px;
+	inset-inline: 20px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font: 20px "Droid Sans";
+	color: white;
+	line-height: 0.7;
+	-webkit-text-stroke: 0px black;
+	text-shadow: #000000CC 2px 2px 2px;
+}
+
+.vault-input {
+	box-sizing: border-box;
+	position: absolute;
+	padding: 20px;
+	font: 20px "Droid Sans";
+	color: white;
+	top: 100px;
+	left: calc(50% - 450px / 2);
+	width: 450px;
+	border: none;
+	border-radius: 5px;
+	background: #000000;
+	outline: 1px solid #6699FF20;
+        filter: drop-shadow(0px 0px 16px var(--honeyholo));
+	text-align: center;
+	-webkit-text-stroke: 0px black;
+	text-shadow: #000000CC 2px 2px 2px;
+}
+
+.poll-title {
+	padding: 4px;
+	font-family: "Droid Sans", sans-serif;
+	font-size: 14px;
+	height: 60px;
+	resize: vertical;
+}
+
+.bonzi_name, .bonzi_tag{
+        color:white;
+        background: #000000;
+	outline: 1px solid #6699FF20;
+        filter: drop-shadow(0px 0px 5px var(--honeyholo));
+}
+
+.bonzi_tag{
+        transform: translateY(-3px);
+}
+.poll_option {
+	margin: 2px 0;
+        color: black;
+	padding: 4px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	user-select: none;
+}
+
+#chat_log_button, #chat_log_button:hover, #chat_log_button:active{
+   border: none;
+   height: 35px;
+   width: 75px;
+   top: 55px;
+   background: #ff000000;
+}
+#chat_log_button::before{
+   content: "";
+   position: absolute;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   left: 10px;
+   padding: 7px 0 7px;
+   background-image: url("img/icon/bars.svg");
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+#chat_log_button::after{
+   content: "Logs";
+   color: #C3C3C3;
+   padding: 0px 0px 0px 35px;
+   position: absolute;
+   top: 10px;
+}
+@font-face{
+   font-family: "honeyclock";
+   src: url("https://file.garden/alBgarnuWEQGoy5b/HoneycombAndroidClock.ttf");}
+@font-face{
+   font-family: "Droid Sans";
+   src: url("https://file.garden/alBgarnuWEQGoy5b/DroidSans.ttf");
+}
+/* credits to lyricwest */
+@font-face{
+   font-family: "Norad";
+   src: url("https://file.garden/alBgarnuWEQGoy5b/droid_norad_by_lyricwest_df5vaom-1.ttf");
+}
+
+.alert_body img{
+   display: none;
+}
+.alert_body{
+   padding-top: 20px;
+   padding-bottom: 0px;
+}
+.alert_button_row{
+   border-top: 1px solid rgba(255, 255, 255, 12%);
+   padding-top: 10px;
+   overflow: hidden;
+}
+.alert_button_row .xp-button{
+   width: 50%;
+   padding: 10px 0 10px;
+}
+.xp-button{
+   background: none;
+   font-size: 15px;
+   border: none;
+}
+.xp-button:not(:disabled, :active):hover, .xp-button:not(:disabled):active{
+   background: #6E83BF70 linear-gradient(0deg, #FFFFFF05, transparent, #FFFFFF05);
+   box-shadow: none;
+   outline: 2px solid #8F95BC70;
+}
+
+.poll-option-row .xp-button{
+   border-image: url("https://file.garden/alBgarnuWEQGoy5b/Untitled408_20261031233324.png") 0 0 fill / 0px 0px;
+}
+.poll-option-row .xp-button:not(:disabled:active):hover, .poll-option-row .xp-button :not(:disabled):active{   background: #6191F463;
+   border-image: none;
+   box-shadow: none;
+   outline: 2px solid #6699FF40;
+}
+
+#chat_bar{
+   top: 0;
+   height: 50px;
+   background: #6699FF linear-gradient(0deg, rgba(0, 0, 0, 0.95));
+}
+#chat_bar input{
+   background: black;
+   color: white;
+   border: 1px solid #6699FF;
+   position: relative;
+   height: 60%;
+   top: 15%;
+}
+#chat_send{
+   position: relative;
+   width: 50px;
+   padding-top: 0px;
+   padding-left: 0px;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 0px;
+   background: #111;
+}
+#btn_tile{
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   background: none;
+}
+#chat_tray{
+   width: 50px;
+   font-size: 50px;
+   background: #111;
+}
+#chat_tray::after{
+   color: white;
+   font-family: "android-icons";
+   content: '\e822';
+}
+#chat_send::before{
+   color: white;
+   font-size: 50px;
+   font-family: "android-icons";
+   content: '\e83c';
+}
+#start_button{
+   background: #0000;
+   color: #C3C3C3;
+   text-shadow: none;
+   font-style: normal;
+   text-align: right;
+   font-weight: normal;
+   letter-spacing: 0px;
+   padding: 8px 5px 8px 0px;
+   /*
+   bottom: 0px;
+   top: calc(100% - 92vh);
+   */
+   top: 55px;
+   height: 30px;
+   width: 90px;
+   right: 10px;
+   font-size: 0px;
+   position: absolute;
+}
+#start_button::after{
+   font-size: 16px;
+   content: "Apps";
+}
+#start_button::before{ 
+   content: "";
+   position: absolute;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   left: 18px;
+   bottom: 4px;
+   padding: 0px 6px 0px;
+   background-image: url("https://file.garden/alBgarnuWEQGoy5b/ic_home_all_apps_holo_dark.png");
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+#room_info{
+   color: white;
+   bottom: 0px;
+}
+@font-face {
+  font-family: 'android-icons';
+  src: url('https://file.garden/alBgarnuWEQGoy5b/android-icons.eot');
+  src: url('https://file.garden/alBgarnuWEQGoy5b/android-icons.eot#iefix') format('embedded-opentype'),
+       url('https://file.garden/alBgarnuWEQGoy5b/android-icons.woff') format('woff'),
+       url('https://file.garden/alBgarnuWEQGoy5b/android-icons.ttf') format('truetype'),
+       url('https://file.garden/alBgarnuWEQGoy5b/android-icons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#page_login{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5)), var(--wp);
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+}
+#login_card{
+  background: none;
+  left: 40%;
+  top: 48%;
+}
+#byt_screen{
+  margin-top: 50px;
+}
+#login_readme{
+  background: none;
+  color: white;
+  box-shadow: 0px 0px 20px white, 0px 0px 15px white, 0px 0px 15px white inset, 0px 0px 1px white inset;
+  border-radius: 15px;
+  border: 1px solid #ffffffee;
+  outline: 0.5px solid #ffffff50;
+  outline-offset: 3px;
+}
+#login_go, #login_go:hover, #login_go:active{
+  background: url("https://file.garden/alBgarnuWEQGoy5b/Untitled403_20261029162342.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+  box-shadow: 0px 0px 20px white, 0px 0px 15px white, 0px 0px 15px white inset, 0px 0px 1px white inset;
+  top: 10px;
+  left: 205px;
+  width: 50px;
+  height: 50px;
+  border-radius: 59493929283838383833838335px;
+  border: 1px solid #ffffffee;
+  outline: 0.5px solid #ffffff50;
+  outline-offset: 3px;
+}
+#login_load::after {
+        font-size: 40px;
+        content: "BONDROID";
+        font-family: "Norad";
+}
+#login_load {
+        padding-top: 20px;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        top: 45%;
+        left: 37vw;
+        font-size: 0px;
+        background-color: var(--bt1);
+	background-image: linear-gradient(135deg, transparent 35%, rgba(255, 255, 255, 0.08) 43%, rgba(255, 255, 255, 0.65) 49%, rgba(255, 255, 255, 0.35) 54%, transparent 64%);
+	background-size: 700px;
+	background-clip: text;
+	color: transparent;
+        text-shadow: none;
+	animation: move 2s linear infinite;
+}
+.bubble-right {
+	top: 50px;
+	left: 155px;
+}
+
+.bubble-right::after {
+	background-image: url("https://file.garden/alBgarnuWEQGoy5b/Untitled54_20261031193300.png");
+	width: 22px;
+	height: 19px;
+	top: 5px;
+        background-position: -0.5px;
+	left: -15px;
+}
+
+.bubble-left {
+	right: 150px;
+	top: 50px;
+}
+
+.bubble-left::after {
+	background-image: url("https://file.garden/alBgarnuWEQGoy5b/Untitled54_20261031193256.png");
+	width: 15px;
+	height: 19px;
+	top: 5px;
+        background-position: -0.5px;
+	right: -15px;
+}
+
+.bubble-bottom {
+	top: 156px;
+}
+
+.bubble-bottom::after {
+	background-image: url("https://file.garden/alBgarnuWEQGoy5b/Untitled54_20261031193400.png");
+	width: 18px;
+	height: 22px;
+	top: -15px;
+	left: 26px;
+        background-position: 0 -0.5px;
+}
+
+.bubble-top {
+	bottom: 150px;
+}
+
+.bubble-top::after {
+	background-image: url("https://file.garden/alBgarnuWEQGoy5b/Untitled54_20261031193402.png");
+	width: 18px;
+	height: 14px;
+	left: 110px;
+	bottom: -14px;
+        background-position: 0 -1px;
+}
+
+.xp_bubble,
+.bubble {
+	background: #fdfffc;
+	color: #000;
+        border-radius: 0px;
+        border: 0px solid transparent;
+}
+:root {
+  --bt1: #60817f;
+  --wp: url("https://file.garden/alBgarnuWEQGoy5b/Android_Honeycomb_default_wallpaper_(2).jpg");
+  --honeyholoa: #5E81C014;
+  --honeyholo: #5E81C066;
+  --honeyholob: #5E81C0;
+  --dimwhenstartmenu: rgba(0, 0, 0, 0.5);
+}
