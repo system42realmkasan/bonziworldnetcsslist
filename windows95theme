@@ -1,0 +1,1030 @@
+@font-face {
+  font-family: 'win95';
+  src: url('https://file.garden/as8F1B3mNBDYixie/w-95-sans-serif.woff') format('woff'),
+       url('https://file.garden/as8F1B3mNBDYixie/ms-sans-serif.ttf') format('ttf');
+}
+
+html {
+    cursor: url('https://file.garden/as8F1B3mNBDYixie/arrow.cur'), default;
+}
+
+[data-tooltip], .help-icon {
+    cursor: url('https://file.garden/as8F1B3mNBDYixie/help_win95.cur'), help;
+}
+
+a, a:link, a:hover, a:active, a:visited, button {
+    cursor: url('https://file.garden/as8F1B3mNBDYixie/cursor.cur'), help !important;
+}
+
+button:disabled, .disabled {
+    cursor: url('https://file.garden/as8F1B3mNBDYixie/Cursor_11.cur'), not-allowed;
+}
+
+.bonzi{
+    cursor: url('https://file.garden/as8F1B3mNBDYixie/Cursor_10.cur'), move !important;
+}
+
+body {
+    background-color: #007c7c !important;
+}
+
+#content {
+    background: #00000000;
+    background-image: url("img/desktop/logo.png"), url("https://file.garden/as8F1B3mNBDYixie/bg.png");
+    background-position: top right, center;
+    background-repeat: no-repeat !important;
+    font-family: 'win95', sans-serif !important;
+    font-size: 8px !important;
+    line-height: 1.7;
+    image-rendering: pixelated !important;
+}
+
+.classic #content {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+.bonzi_tag {
+    font-family: 'win95', sans-serif !important;
+    font-size: 7px !important;
+    padding: 4px;
+    font-weight: 600;
+    line-height: 1.4;
+    border-radius: 0px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0013.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    box-shadow: none;
+    image-rendering: pixelated;
+    background: rgb(189,189,189);
+    z-index: 2;
+    bottom: 1px;
+    top: auto;
+    transform: translateY(-159px);
+}
+
+.bonzi_name {
+    border-radius: 0px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0013.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    box-shadow: none;
+    image-rendering: pixelated;
+    padding: 9px;
+    position: absolute;
+    background: rgb(189,189,189);
+    font-size: 8px;
+    color: #000;
+    max-width: 300px;
+    overflow: hidden;
+    line-height: 1.4;
+    padding-top: 7px;
+    z-index: 1;
+    font-family: 'win95', sans-serif !important;
+}
+
+#chat_bar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    background-image: url("img/desktop.vaporwave/taskbar.png");
+    background-size: 100% 100%;
+    z-index: 999;
+}
+
+#chat_tray {
+        background-image: url(img/desktop.vaporwave/notif_left.png), url(img/desktop.vaporwave/notif_right.png), url(img/desktop.vaporwave/notif.png);
+    background-repeat: no-repeat;
+    background-size: 5px 28px, 3px 28px, 100% 100%;
+    vertical-align: middle;
+    padding-left: 6px;
+    padding-top: 3px;
+    width: 22px;
+    background-position: left center, right center, left center;
+
+}
+
+.chat_bar_top {
+    top: 0;
+}
+
+#chat_send, #start_button {
+    user-select: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: #000;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0px;
+    font-size: 9px;
+    text-shadow: none;
+    padding-top: 10px;
+    font-family: 'win95', sans-serif;
+    line-height: 1;
+    color: #0000;
+}
+
+#chat_send {
+    background-image: url("https://file.garden/as8F1B3mNBDYixie/start2.png");
+    width: 58px;
+    padding-left: 24px;
+}
+
+#chat_send:hover, #start_button:hover {
+    background-position: 0 -28px;
+}
+
+#chat_send:active, #start_button:active {
+    background-position: 0 -56px;
+    padding-top: 11px;
+}
+
+#chat_send:active {
+    padding-left: 25px;
+}
+
+#start_button:active {
+    padding-left: 11px;
+}
+
+#start_button {
+    background-image: url("https://file.garden/as8F1B3mNBDYixie/startthin2.png");
+    padding-left: 7px;
+    margin-left: 0px;
+    width: 26px;
+    z-index: -1;
+    padding-left: 10px;
+}
+
+#chat_message {
+    flex: 1;
+    margin: 4px;
+    width: 0;
+}
+
+#room_info {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    line-height: 125%;
+    text-align: right;
+    padding: 7px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    user-select: text;
+}
+
+.tray_btn {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: 2px 0;
+}
+
+#btn_tile {
+    background-image: url("img/desktop.vaporwave/tile.png");
+    padding-right: 4px;
+    padding-top: 1px;
+    background-repeat: no-repeat;
+}
+
+#chat_log_button {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 0px;
+    background:
+        url(https://file.garden/as8F1B3mNBDYixie/chat%20log%20button.png);
+}
+
+#chat_log_button:hover {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 0px;
+    background:
+        url(https://file.garden/as8F1B3mNBDYixie/chat%20log%20button.png);
+    background-position: 0 -30px;
+}
+
+#chat_log_button:active {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 0px;
+    background:
+        url(https://file.garden/as8F1B3mNBDYixie/chat%20log%20button.png);
+    background-position: 0 -60px;
+}
+
+#chat_log {
+    position: absolute;
+    width: 350px;
+    z-index: 9999;
+    height: calc(100% - 28px);
+}
+
+#chat_log .window_body {
+    justify-content: flex-start;
+    display: flex;
+}
+
+#chat_log_resize {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    bottom: 0;
+    width: 12px;
+    cursor: ew-resize;
+    user-select: none;
+}
+
+#chat_log_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    overflow: hidden scroll;
+    font-size: 8px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.log_icon {
+    border: 1px dashed #fff;
+}
+
+#chat_log_content hr:first-child {
+    display: none;
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.window_header {
+    height: 24px;
+    font-size: 8px;
+    text-shadow: none;
+    border-image: url(https://file.garden/as8F1B3mNBDYixie/window_header.png) 0 9 fill / 0px 9px / 0 stretch;
+}
+
+.window_body {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    padding: 0 5px 5px;
+    border-image: url("https://file.garden/as8F1B3mNBDYixie/window_border.png") 0 6 6 6 / 0 6px 6px 6px;
+    image-rendering: pixelated;
+    background: #ffe;
+    overflow: hidden;
+    background-color: rgb(189,189,189);
+}
+
+.window_close {
+    background-image: url(img/desktop.vaporwave/close.png);
+    margin-bottom: 1px;
+}
+
+.window_close:hover {
+    background-position-y: -21px;
+}
+
+.window_close:active {
+    background-position-y: -42px;
+}
+
+.resize_nw,
+.resize_ne,
+.resize_sw,
+.resize_se,
+.resize_n,
+.resize_w,
+.resize_s,
+.resize_e {
+    position: absolute;
+    user-select: none;
+}
+
+.resize_nw {
+    cursor: nwse-resize;
+    width: 8px;
+    height: 8px;
+    top: -4px;
+    left: -4px;
+}
+
+.resize_ne {
+    cursor: nesw-resize;
+    width: 8px;
+    height: 8px;
+    top: -4px;
+    right: -4px;
+}
+
+.resize_sw {
+    cursor: nesw-resize;
+    width: 8px;
+    height: 8px;
+    bottom: -4px;
+    left: -4px;
+}
+
+.resize_se {
+    cursor: nwse-resize;
+    width: 8px;
+    height: 8px;
+    bottom: -4px;
+    right: -4px;
+}
+
+.resize_n {
+    cursor: ns-resize;
+    height: 8px;
+    top: -4px;
+    inset-inline: 4px;
+}
+
+.resize_w {
+    cursor: ew-resize;
+    width: 8px;
+    left: -4px;
+    inset-block: 4px;
+}
+
+.resize_s {
+    cursor: ns-resize;
+    height: 8px;
+    bottom: -4px;
+    inset-inline: 4px;
+}
+
+.resize_e {
+    cursor: ew-resize;
+    width: 8px;
+    right: -4px;
+    inset-block: 4px;
+}
+
+#room_info {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    line-height: 170%;
+    text-align: right;
+    padding: 7px;
+    font-size: 8px;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    user-select: text;
+}
+
+#start_menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 28px;
+    left: 60px;
+    width: 250px;
+    height: 267px;
+    border-radius: 0px;
+    border-radius: 0px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0013.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    box-shadow: none;
+    image-rendering: pixelated;
+    z-index: 100000;
+    background-color: rgb(189,189,189);
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/win95logo.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#start_menu_body {
+    position: absolute;
+    top: 50px;
+    left: 21px;
+    bottom: 40px;
+    right: 2px;
+    padding-top: 6px;
+    background: none;
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/Sprite-00151.png);
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: top left;
+    background-color: rgb(189,189,189);
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.plus_sign {
+    font-family: 'win95', sans-serif !important;
+    font-weight: normal !important;
+    image-rendering: pixelated !important;
+}
+
+.xp-button, button {
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent !important;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0006.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+    border-radius: 0;
+    min-height: 23px;
+    padding: 0 12px;
+    font-family: 'win95', sans-serif !important;
+    font-size: 8px;
+    appearance: none;
+}
+
+.xp-button:hover {
+    box-shadow: none !important;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent !important;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0006.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+    border-radius: 0;
+    font-family: 'win95', sans-serif !important;
+    font-size: 8px;
+    appearance: none;
+}
+
+.xp-button:active, button:active {
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent !important;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/buttonpressed.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+    border-radius: 0;
+    font-family: 'win95', sans-serif !important;
+    font-size: 8px;
+    appearance: none;
+}
+
+#start_menu_name {
+    font-size: 8px;
+    color: black;
+    left: 81px;
+    top: 20px;
+}
+
+.start_menu_item_name {
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.8;
+}
+.start_menu_item_description {
+    font-size: 8px;
+    display: none;
+}
+.start_menu_item:hover {
+    background-color: #000080;
+    color: white;
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/arrowwww2.png);
+}
+.start_menu_item {
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/arrowwww1.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#start_menu_pfp {
+    position: absolute;
+    top: 6px;
+    left: 29px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffffff;
+    border-radius: 0px;
+    box-sizing: border-box;
+    background: #0f0f0f url(/img/pfp/purple.webp);
+    background-size: contain;
+    image-rendering: auto;
+    cursor: pointer;
+}
+
+.vault-message {
+    font-family: 'win95', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.7;
+    -webkit-text-stroke: 0 !important;
+    text-shadow: none;
+}
+
+.vault-input {
+    font-family: 'win95', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.7;
+    -webkit-text-stroke: 0 !important;
+    text-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+.vault-keeper img {
+    content: url(https://file.garden/as8F1B3mNBDYixie/sparkybuddy2.png);
+    image-rendering: pixelated;
+    filter: none;
+}
+
+#settings_button img {
+    content: url(https://file.garden/as8F1B3mNBDYixie/settings.png);
+    image-rendering: pixelated !important;
+    width: 32px;
+    height: 32px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+#poll_button img {
+    content: url(https://file.garden/as8F1B3mNBDYixie/poll.png);
+    image-rendering: pixelated !important;
+    width: 32px;
+    height: 32px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+#hat_crafter_button img {
+    content: url(https://file.garden/as8F1B3mNBDYixie/craft.png);
+    image-rendering: pixelated !important;
+    width: 32px;
+    height: 32px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.vault-keeper img:active {
+    content: url(https://file.garden/as8F1B3mNBDYixie/sparkybuddy2.png);
+    image-rendering: pixelated;
+    filter: none;
+    transition: none;
+}
+
+.vault-body {
+    background: none;
+    background-color: rgb(198,198,198);
+}
+
+#start_menu_vault {
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/vault.png);
+}
+
+#start_menu_vault:active {
+    background-position: 0 -64px !important;
+}
+
+small {
+    line-height: 1.7;
+}
+
+label {
+    line-height: 1.7;
+}
+
+textarea, .poll-title {
+    background: white;
+    border: 1px solid black;
+    margin: 0;
+    resize: none;
+    font-family: 'win95', sans-serif !important;
+    font-size: 8px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-00122.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+input {
+    background-color: #fff;
+    color: #000;
+    font-family: 'win95', sans-serif !important;
+    font-size: 8px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-00122.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.bubble {
+    font-size: 8px;
+    border-radius: 0px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0013.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    box-shadow: none;
+    image-rendering: pixelated;
+    background: rgb(189,189,189);
+    z-index: 3;
+}
+
+.bubble-top {
+    transform: translateY(-10px);
+}
+
+.bubble-left {
+    top: 0;
+    transform: translateY(31px);
+}
+
+#login_name, #login_room, #login_error {
+    font-family: 'win95', sans-serif !important;
+    font-size: 8px;
+    box-shadow: none;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+#login_name, #login_room{
+    font-family: 'win95', sans-serif !important;
+    font-size: 8px;
+}
+
+#login_room {
+    height: auto;
+}
+
+#login_error {
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0013.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    left: 50%;
+    transform: translate(-50%,0%);
+    top: 140%;
+    background-color: rgb(189,189,189);
+    color: #ab0c0c;
+}
+
+
+.editor-item {
+    image-rendering: pixelated !important;
+}
+
+.locked-item::after {
+    content: "";
+    background: url(https://file.garden/as8F1B3mNBDYixie/lock_small.png) no-repeat center / 32px 32px, #0000009f;
+    position: absolute;
+    inset: -1px;
+    pointer-events: none;
+}
+
+.settings_category.selected {
+    background-color: #0002;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    margin: 0;
+    top: 2px !important;
+    content: '';
+    width: 13px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none !important;
+    border-image: none !important;
+    background: rgb(189,189,189);
+    background-image: url('https://file.garden/as8F1B3mNBDYixie/unchecked2.png');
+}
+
+input[type="checkbox"]:checked{
+    background-image: url('https://file.garden/as8F1B3mNBDYixie/checked2.png');
+}
+
+#login_card {
+    background-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0010.png');
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: 0px;
+    width: 459px;
+    height: 142px;
+    padding-left: 50px;
+    inset: 0;
+    margin: auto;   
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0; 
+}
+
+#page_login {
+    background-color: #007c7c;
+    background-image: none;
+    background-repeat: no-repeat;
+    .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100dvh;
+    }
+}
+
+#start_menu_name {
+    border: none !important;
+    text-shadow: none;
+}
+
+#login_name {
+    left: 35%;
+    transform: translateY(200%);
+    -webkit-transform: translateY(200%);
+}
+
+#login_room {
+    left: 35%;
+    transform: translateY(215%);
+    -webkit-transform: translateY(215%);
+}
+
+#login_readme {
+    color: #000;
+    padding: 12px;
+    width: 275px;
+    text-align: center;
+    box-shadow: none;
+    border-radius: 0px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0013.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background-color: rgb(189,189,189);
+    line-height: 5;
+    padding-bottom: 0px;
+    font-size: 8px !important;
+    inset: 0;
+    height: 80px;
+    margin: auto;
+    left: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+    transform: translate(-50%,62px);
+    -webkit-transform: translate(-50%,62px);
+}
+
+#login_go {
+    left: 350px;
+    top: 83px;
+    position: absolute;
+    width: 73.5px;
+    height: 23px;
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/okbutton2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    image-rendering: pixelated !important;
+    cursor: url('https://file.garden/as8F1B3mNBDYixie/cursor.cur'), help !important;
+}
+#login_go:hover {
+    background-position: 0 -23px;
+}
+#login_go:active {
+    background-position: 0 -46px;
+}
+#login_version {
+    color: #fff;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 8px;
+    text-shadow: none;
+}
+
+#login_load {
+    color: #fff;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 8px;
+    letter-spacing: 0px;
+    text-shadow: none;
+    position: absolute;
+    line-height: 100%;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000000;
+    background-color: #007c7c;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/Sprite-0016.png);
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(189,189,189);
+    border-radius: 0px;
+    border-radius: 0px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0013.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+::-webkit-scrollbar-button {
+    border-radius: 0px;
+    border-radius: 0px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0013.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    height: 15px !important;
+    width: 15px !important;
+    display: block;
+}
+
+::-webkit-scrollbar-button:active {
+    border-radius: 0px;
+    border-radius: 0px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/buttonpressed.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background: #f5f5f5 url('https://file.garden/as8F1B3mNBDYixie/buttonarrow.png') no-repeat;
+    background-size: 16px;
+    background-position: -2px -1px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background: #f5f5f5 url('https://file.garden/as8F1B3mNBDYixie/buttonarrowdown.png') no-repeat;
+    background-size: 16px;
+    background-position: -2px -2px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+    background: #f5f5f5 url('https://file.garden/as8F1B3mNBDYixie/buttonarrowleft.png') no-repeat;
+    background-size: 16px;
+    background-position: -2px -1px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+    background: #f5f5f5 url('https://file.garden/as8F1B3mNBDYixie/buttonarrowright.png') no-repeat;
+    background-size: 16px;
+    background-position: -2px -2px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+::-webkit-scrollbar-button:vertical:start:increment,
+::-webkit-scrollbar-button:vertical:end:decrement,
+::-webkit-scrollbar-button:horizontal:start:increment, 
+::-webkit-scrollbar-button:horizontal:end:decrement 
+{
+    display: none;
+}
+
+input[type='range'] {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    background:red;
+    height:0px;
+}
+input[type='range']::-webkit-slider-thumb {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    background: url(https://file.garden/as8F1B3mNBDYixie/sliderthumb2.png);
+    height:23px;
+    width:11px;
+    cursor: url('https://file.garden/as8F1B3mNBDYixie/Cursor_8.cur'), ew-resize !important;
+}
+
+.craft_slot {
+    background-color: #eae3be;
+    image-rendering: pixelated !important;
+}
+
+#byt_screen {
+    border-width: 2px !important;
+    border-style: inset !important;
+    border-color: currentcolor !important;
+    border-image: none !important;
+    border: 0px !important;
+    inset: 0px !important;
+    z-index: 0 !important;
+}
+
+.fa-solid {
+    filter: grayscale(1) !important;
+    -webkit-text-stroke: 0.8px black;
+    transform: translate(-1px,-1px);
+}
+
+gay-schizo, .schizo-main, .schizo-overlay {
+    font-family: 'win95', sans-serif !important;
+    transform-origin: 0% 75%;
+    transform: translateY(-0.9px) scale(1,1.25);
+}
+
+#error_cont, #ban_cont, #kick_cont {
+    border-radius: 0px;
+    border: 2px solid transparent !important;
+    border-radius: 0 !important;
+    border-image: url('https://file.garden/as8F1B3mNBDYixie/Sprite-0013.png') 3 fill stretch !important;
+    border-image-slice: 2 !important;
+    box-shadow: none;
+    image-rendering: pixelated;
+    background: rgb(189,189,189);
+}
+
+#error_cont img {
+    content: url(https://file.garden/as8F1B3mNBDYixie/error_logo.png);
+}
+
+#kick_cont img, #ban_cont img {
+    content: url(https://file.garden/as8F1B3mNBDYixie/ban_logo.png);
+}
+
+#page_kick {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bubble-left::after {
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/bubble_tail_l4.png);
+}
+
+.bubble-right::after {
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/bubble_tail_r3.png);
+}
+
+.bubble-top::after {
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/bubble_tail_t2.png);
+}
+
+.bubble-bottom::after {
+    background-image: url(https://file.garden/as8F1B3mNBDYixie/bubble_tail_b2.png);
+}
